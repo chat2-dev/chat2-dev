@@ -9,15 +9,47 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+}
+
+.toolbar button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .editor {
+    border: 1px solid #ccc;
+    padding: 10px;
     min-height: 300px;
     outline: none;
     font-size: 16px;
     line-height: 1.5;
+    background-color: white;
+    color: black;
+}
+
+.editor-container.dark .editor {
+    background-color: black;
+    color: white;
+}
+
+.editor-container.dark .toolbar button {
+    color: white;
+    background-color: black;
+}
+
+.editor img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
 }
 
 .preview-container {
